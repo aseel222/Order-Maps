@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.OrderMaps.ui.fragement.DailyOrderFragment">
+
+        <EditText
+            android:id="@+id/searchdailyorder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:inputType="number"
+            android:background="@drawable/edittext_shape"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingStart="@dimen/_30sdp"
+            android:hint="ابحث عن طلبك" />
+        <ImageView
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/searchdailyorder"
+            app:layout_constraintBottom_toBottomOf="@id/searchdailyorder"
+            app:layout_constraintStart_toStartOf="@id/searchdailyorder"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ic_search"
+            />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dailyorder_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:listitem="@layout/order_item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/searchdailyorder"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                />
+
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/loading"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

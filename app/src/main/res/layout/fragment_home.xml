@@ -1,0 +1,168 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.OrderMaps.ui.fragement.HomeFragment">
+
+            <ImageView
+                android:id="@+id/rectangle_img"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_130sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/curvedmove_btnshape"
+
+                />
+
+
+
+            <ImageView
+                android:id="@+id/container"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_80sdp"
+                app:layout_constraintStart_toStartOf="@id/rectangle_img"
+                android:background="@drawable/curvedwhiteshape"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="@id/rectangle_img"
+                android:layout_marginStart="@dimen/_10sdp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/monytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/container"
+                app:layout_constraintStart_toStartOf="@id/container"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/move"
+                android:text="المدفوعات"
+
+                />
+
+            <TextView
+                android:id="@+id/day_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/container"
+                app:layout_constraintTop_toBottomOf="@id/monytxt"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+
+
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_14ssp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text=".... ريال"
+                android:textAlignment="center"
+                android:background="@drawable/edittext_shape"
+
+
+                />
+
+            <TextView
+                android:id="@+id/totalmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/day_money"
+                app:layout_constraintTop_toTopOf="@id/day_money"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_14ssp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:text=".... ريال"
+                android:paddingTop="@dimen/_5sdp"
+                android:background="@drawable/edittext_shape" />
+
+            <androidx.appcompat.widget.AppCompatToggleButton
+                android:id="@+id/togle_btn"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:layout_constraintTop_toTopOf="@id/container"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/toggle_shape"
+                android:textOn=""
+                android:textOff=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/container" />
+
+            <TextView
+                android:id="@+id/sore_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/togle_btn"
+                app:layout_constraintStart_toStartOf="@id/togle_btn"
+                app:layout_constraintEnd_toEndOf="@id/togle_btn"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:text="حاله المتجر" />
+
+            <TextView
+                android:id="@+id/closedoropen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/togle_btn"
+                app:layout_constraintEnd_toEndOf="@id/togle_btn"
+                app:layout_constraintTop_toBottomOf="@id/togle_btn"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:text="مغلق"
+
+                />
+
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rectangle_img"
+                app:tabSelectedTextColor="@color/move"
+                app:tabIndicatorColor="@color/move"
+
+                />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/tablayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

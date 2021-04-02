@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash"
+        tools:context=".SignupActivity">
+
+        <TextView
+            android:id="@+id/siguptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="انشاء حساب"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/siguptxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            android:inputType="text"
+
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:hint="الاسم"
+            android:textColorHint="@color/gray"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="@drawable/curvedwhite_btnshape"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/name_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:imeOptions="flagForceAscii"
+
+            android:maxLines="1"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:hint="البريد الالكتروني"
+            android:textColorHint="@color/gray"
+            android:textAlignment="viewStart"
+            android:inputType="textEmailAddress"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="@drawable/curvedwhite_btnshape"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phone_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/email_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:maxLines="1"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:hint="رقم الهاتف"
+            android:textColorHint="@color/gray"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+            android:inputType="phone"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="@drawable/curvedwhite_btnshape"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/address_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/phone_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:hint="العنوان"
+            android:textColorHint="@color/gray"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+            android:inputType="text"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="@drawable/curvedwhite_btnshape"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pass_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/address_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:hint="كلمه المرور"
+            android:textColorHint="@color/gray"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+            android:inputType="textPassword"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="@drawable/curvedwhite_btnshape"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/confirmpass_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/pass_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:hint="تاكيد كلمه المرور"
+            android:textColorHint="@color/gray"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+            android:inputType="textPassword"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="@drawable/curvedwhite_btnshape"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupbtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/confirmpass_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/curvedmove_btnshape"
+            android:text="انشاء حساب"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_20sdp" />
+        <include
+            android:id="@+id/loading"
+            layout="@layout/loading"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

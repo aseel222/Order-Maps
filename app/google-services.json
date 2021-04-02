@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "83116249410",
+    "project_id": "ordermaps-5400e",
+    "storage_bucket": "ordermaps-5400e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83116249410:android:0fea9122e519929974f8db",
+        "android_client_info": {
+          "package_name": "com.example.splashactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83116249410-il3upol8s0b8eeplf185ct4e6jjashg0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.splashactivity",
+            "certificate_hash": "67684246755ffaeb5fdcdff5ce2439b5e1ccc96a"
+          }
+        },
+        {
+          "client_id": "83116249410-0atnudu674arsmu8vqsurm515va3dh1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTlJpXHABhGU_bfXVeCLUYYC7tvg1RhrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83116249410-0atnudu674arsmu8vqsurm515va3dh1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

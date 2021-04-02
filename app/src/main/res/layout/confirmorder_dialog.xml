@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialogwhiteshape">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/confirmbtn"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_190sdp"
+        app:lottie_fileName="confirmorder.json"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="@dimen/_20sdp"
+
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+    <TextView
+        android:id="@+id/oktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmbtn"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_20ssp"
+        android:text="حسنا!"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/confirmedordertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/oktxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        tools:text="تم تاكيد طلب رقم 5552"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_15ssp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@id/confirmedordertxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="دردش مع العميل"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:background="@color/green"
+
+        />
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/ic_remove"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

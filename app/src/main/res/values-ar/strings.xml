@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Order Maps</string>
+    <string name="bad_request">Bad request</string>
+    <string name="unauthorized_user">unauthorized user</string>
+    <string name="request_not_found">request not found</string>
+    <string name="server_error">server error</string>
+    <string name="unexpected_error">unexpected error</string>
+    <string name="not_connected_to_network">not connected to network</string>
+    <string name="problem_in_network">problem in network</string>
+    <string name="request_forbidden">Request forbidden</string>
+    <string name="internet_not_connected">Internet not connected</string>
+    <string name="login">Login</string>
+    <string name="addlogindata">Add Login Data</string>
+    <string name="phonenum">Phone Number</string>
+    <string name="donthaveaccount">Dont Have Account? create Account</string>
+    <string name="signup">SignUp</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="createaccount">Create Account</string>
+    <string name="entercode">Enter Code</string>
+    <string name="verificationcode">Verification Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="resendcode">Resend Code</string>
+
+
+
+</resources>

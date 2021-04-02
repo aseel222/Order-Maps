@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash"
+        tools:context=".OtpActivity">
+
+        <TextView
+            android:id="@+id/entercode_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"
+            android:text="ادخل الكود"
+            android:textAllCaps="false"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entercode_txt"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="كود تعريف الهاتف"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/firstPinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:hint=""
+            app:layout_constraintStart_toStartOf="parent"
+            android:imeOptions="flagForceAscii"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/entercode_txt"
+
+            android:itemBackground="@drawable/curvedwhiteshape"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/move"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/move"
+            app:cursorWidth="1dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            app:itemHeight="@dimen/_40sdp"
+            app:itemRadius="4dp"
+            app:lineColor="@color/lightgray"
+            app:itemSpacing="@dimen/_10sdp"
+            app:itemWidth="@dimen/_40sdp"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirmbtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/firstPinView"
+            android:layout_marginTop="@dimen/_70sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/curvedmove_btnshape"
+            android:text="تاكيد"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendagaingbtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+
+            app:layout_constraintTop_toBottomOf="@id/confirmbtn"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/curvedwhite_btnshape"
+
+            android:text="اعاده ارسال"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

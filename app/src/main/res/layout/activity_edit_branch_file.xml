@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash"
+        tools:context="com.example.OrderMaps.ui.activities.EditBranchFileActivity">
+
+        <ImageView
+            android:id="@+id/toolbarfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/rectangle_shape"
+
+            />
+
+        <TextView
+            android:id="@+id/toolbartxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/toolbarfile"
+            app:layout_constraintBottom_toBottomOf="@id/toolbarfile"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="ملف الفرع"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleimgprofile"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:layout_constraintTop_toBottomOf="@id/toolbarfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/ic_profile2" />
+
+        <EditText
+            android:id="@+id/name_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/circleimgprofile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:hint="الاسم"
+            android:maxLines="1"
+
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:inputType="text"
+            android:background="@drawable/curvedwhite_btnshape" />
+
+        <EditText
+            android:id="@+id/email_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/name_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="البريد الالكتروني"
+            android:maxLines="1"
+            android:imeOptions="flagForceAscii"
+
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/curvedwhite_btnshape" />
+
+        <EditText
+            android:id="@+id/phone_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/email_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="رقم الهاتف"
+            android:gravity="start"
+            android:maxLines="1"
+
+            android:textAlignment="viewStart"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:inputType="phone"
+            android:background="@drawable/curvedwhite_btnshape" />
+
+        <EditText
+            android:id="@+id/address_etxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/phone_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="العنوان"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:inputType="text"
+            android:background="@drawable/curvedwhite_btnshape" />
+
+        <RadioGroup
+            android:id="@+id/grouplanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/address_etxt"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:id="@+id/radioButton"
+                android:checked="false"
+                android:layout_weight="0.13"
+                android:buttonTint="@color/move"
+                android:textColor="@color/gray"
+                android:foregroundTint="@color/move"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:textSize="@dimen/_15ssp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="العربيه"
+                android:id="@+id/radioButton2"
+                android:checked="false"
+                android:foregroundTint="@color/move"
+                android:buttonTint="@color/move"
+
+
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="@dimen/_20sdp"
+
+                android:layout_weight="0.10" />
+
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ubdatebtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/grouplanguage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/curvedmove_btnshape"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="@dimen/_15ssp"
+            android:text="حفظ"
+
+            />
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:background="@drawable/ic_back"
+            android:scaleType="fitXY" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

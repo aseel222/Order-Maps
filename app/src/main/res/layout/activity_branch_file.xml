@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash"
+        tools:context="com.example.OrderMaps.ui.activities.BranchFileActivity">
+
+        <ImageView
+            android:id="@+id/toolbarfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/rectangle_shape"
+
+            />
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/toolbartxt"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:src="@drawable/ic_back"
+            android:layoutDirection="rtl"
+            android:scaleType="fitXY"
+/>
+        <TextView
+            android:id="@+id/toolbartxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/toolbarfile"
+            app:layout_constraintBottom_toBottomOf="@id/toolbarfile"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="ملف الفرع"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleimgprofile"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:layout_constraintTop_toBottomOf="@id/toolbarfile"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/ic_profile2" />
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/circleimgprofile"
+            app:layout_constraintStart_toEndOf="@id/namedatatxt"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="الاسم"
+
+            />
+        <TextView
+            android:id="@+id/namedatatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/circleimgprofile"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="الاسم:"
+
+            />
+
+        <TextView
+            android:id="@+id/emailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/nametxt"
+            app:layout_constraintStart_toEndOf="@id/circleimgprofile"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="البريد الالكتروني"
+
+            />
+        <TextView
+            android:id="@+id/emaildatatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/nametxt"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="البريد الالكتروني:"
+
+            />
+
+        <TextView
+            android:id="@+id/phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/emailtxt"
+            app:layout_constraintStart_toEndOf="@id/phonenumdata"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="رقم الهاتف"
+
+            />
+        <TextView
+            android:id="@+id/phonenumdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/emailtxt"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="رقم الهاتف:"
+
+            />
+
+        <TextView
+            android:id="@+id/addresstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/phonenum"
+            app:layout_constraintStart_toEndOf="@id/addresstxtdata"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="العنوان"
+
+            />
+        <TextView
+            android:id="@+id/addresstxtdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintTop_toBottomOf="@id/phonenum"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="العنوان:"
+
+            />
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ediitbtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/addresstxt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/curvedmove_btnshape"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:text="تعديل"
+
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
